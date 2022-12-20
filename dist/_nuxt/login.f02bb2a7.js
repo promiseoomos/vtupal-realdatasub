@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper.a1a6add7.js";import{a as e,o as c}from"./entry.a5fcd4f4.js";const r={},t={class:"bg-white grid grid-cols-4 gap-3"};function s(n,a){return c(),e("div",t)}const d=o(r,[["render",s]]);export{d as default};

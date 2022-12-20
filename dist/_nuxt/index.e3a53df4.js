@@ -1,0 +1,1 @@
+import{_ as r}from"./_plugin-vue_export-helper.a1a6add7.js";import{a as t,b as e,t as n,o as a}from"./entry.a5fcd4f4.js";const s={},c=e("p",null,"Fund your Wallet, Promise",-1);function l(o,i){return a(),t("div",null,[c,e("p",null,"You are getting for "+n(o.$route.query.network),1)])}const d=r(s,[["render",l]]);export{d as default};
