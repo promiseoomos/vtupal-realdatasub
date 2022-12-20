@@ -1,0 +1,1 @@
+import{f as u}from"./useFormatDigits.0d52ca80.js";import{q as s}from"./entry.9a5b8fbf.js";function n(t,o){let e=s(),m=Math.round(t+t*(o/100)),r=u(m);return e.details.currency=="NGN"?`\u20A6${r}`:`$${r}`}export{n as _};

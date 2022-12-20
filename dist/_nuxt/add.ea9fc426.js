@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.a1a6add7.js";import{a as o,o as t,b as c}from"./entry.9a5b8fbf.js";const r={},s=c("p",null,"Add a Service here",-1),a=[s];function n(_,d){return t(),o("div",null,a)}const f=e(r,[["render",n]]);export{f as default};

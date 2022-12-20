@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.a1a6add7.js";import{a as r,o}from"./entry.9a5b8fbf.js";const c={};function t(n,s){return o(),r("div",null," Change Password ")}const f=e(c,[["render",t]]);export{f as default};
