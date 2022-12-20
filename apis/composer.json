@@ -1,0 +1,7 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "nesbot/carbon": "^2.60",
+        "flutterwavedev/flutterwave-v3": "^1.0"
+    }
+}

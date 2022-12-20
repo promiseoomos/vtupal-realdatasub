@@ -1,0 +1,302 @@
+create table users(
+    id int AUTO_INCREMENT, 
+    track_id varchar(400) not null unique,
+    first_name varchar(400) not null,
+    last_name varchar(400) not null,
+    email varchar(400) not null unique,
+    password Text not null,
+    phone varchar(400) not null,
+    level varchar(400) not null,
+    ip_address varchar(400) not null,
+    block varchar(400) not null,
+    block_pro varchar(400) not null,
+    unblock varchar(400) not null,
+    activate varchar(400) not null,
+    block_info text not null,
+    block_stat text not null,
+    is_delete varchar(400) not null,
+    wallet_balance varchar(400) not null,
+    pin_credit varchar(400) not null,
+    currency varchar(400) not null,
+    acct_clearance varchar(400) not null,
+    acct_number varchar(400) not null,
+    country varchar(400) not null,
+    referral_code varchar(400) not null unique,
+    referrer varchar(400) not null,
+    referrer_id varchar(400) not null,
+    referral_wallet varchar(400) not null,
+    api_key varchar(400) not null,
+    credit varchar(400) not null,
+    pins varchar(400) not null,
+    account_name varchar(400) not null,
+    account_number varchar(400) not null,
+    bank_name varchar(400) not null,
+    email_verified varchar(400) not null DEFAULT "No",
+    is_deleted varchar(400) not null default "No",
+    acct_status varchar(400) not null default "Active",
+    date_joined datetime not null DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY key(id)
+ )
+
+ 
+ <select class="form-control" id="IsGotv" required="required" ><option value = "" selected="selected" required="required">Select Gotv Banquet</option>
+                <option data-plan="GOtv Smallie - monthly" data-amount="800" data-service="gotv" data-variation_code="gotv-smallie" >GOtv Smallie - monthly - N800</option>
+                
+                <option data-plan="GOtv Smallie - quarterly" data-amount="2100" data-service="gotv" data-variation_code="gotv-smallie-3months">GOtv Smallie - quarterly N2,100</option>
+                
+				<option data-plan="GOtv Smallie - yearly" data-amount="6200"  data-service="gotv" data-variation_code="gotv-smallie-1year" >GOtv Smallie - yearly N6,200</option>
+				
+				
+				
+                <option data-plan="Gotv Max N3600" data-amount="3600" data-service="gotv" data-variation_code="gotv-max" >Gotv Max N3600</option>
+                
+                
+                <option data-plan="GOtv Jolli N2,460" data-amount="2460" data-service="gotv" data-variation_code="gotv-jolli" >GOtv Jolli N2,460</option>
+                
+                
+                <option data-plan="GOtv Jinja N1,640" data-amount="1640" data-service="gotv" data-variation_code="gotv-jinja" >GOtv Jinja N1,640</option>
+                
+                
+                
+                </select>
+		
+		
+      </div>
+
+
+      
+      <div class="form-group">
+          <label for="inputText3" class="col-form-label">IUC Number</label>
+    <input id="smartno" type="text" class="form-control" name="smartno" onKeyUp="javacript:document.getElementById('iuc').value = document.getElementById('smartno').value;" onSelect="javacript:document.getElementById('iuc').value = document.getElementById('smartno').value;">
+                                            </div>
+                                            
+              <div class="form-group">
+          <label for="inputText3" class="col-form-label">Phone Number</label>
+    <input id="mobile" type="phone" class="form-control" name="phone" onKeyUp="javascript:document.getElementById('tele').value = document.getElementById('mobile').value;" onSelect="javascript:document.getElementById('tele').value = document.getElementById('mobile').value;">
+                                            </div>             
+                             
+                                            
+                </div>
+                <!-- End GOTV hidden -->   
+                
+               
+                <!-- Start DSTV hidden -->       
+                              <div class="float-center" id="ifDstv" style="display:none;">                 
+                                       <div class="form-group" >
+                                                 
+		 
+        <label>Bouquet:</label>
+		
+		<select class="form-control" id="IsDstv" required="required" ><option value = "" selected="selected" required="required">Select DSTV Banquet</option>
+                <option data-plan="DStv Padi N1,850" data-amount="1850" data-service="dstv" data-variation_code="dstv-padi">DStv Padi N1,850</option>
+                
+                
+                 <option data-plan="DStv Yanga N2,565" data-amount="2565" data-service="dstv" data-variation_code="dstv-yanga">DStv Yanga N2,565</option>
+                 
+                 
+                 <option data-plan="Dstv Confam N4,615" data-amount="4615" data-service="dstv" data-variation_code="dstv-confam">Dstv Confam N4,615</option>
+                 
+                 
+                 <option data-plan="DStv  Compact N7900" data-amount="7900" data-service="dstv" data-variation_code="dstv79">DStv  Compact N7,900</option>
+                 
+                 
+                 <option data-plan="DStv Premium N16,200" data-amount="16200" data-service="dstv" data-variation_code="dstv3">DStv Premium N16,200</option>
+                 
+                <option data-plan="DStv Asia N5,540" data-amount="6200" data-service="dstv" data-variation_code="dstv6">DStv Asia N6,200</option>
+                
+                <option data-plan="DStv Compact Plus N12,400" data-amount="12400" data-service="dstv" data-variation_code="dstv7">DStv Compact Plus N12,400</option>
+                
+                <option data-plan="DStv Premium-French N25,550" data-amount="25550" data-service="dstv" data-variation_code="dstv9">DStv Premium-French N25,550</option>
+                
+             <option data-plan="DStv Premium-Asia N20,500" data-amount="20500" data-service="dstv" data-variation_code="dstv10">DStv Premium-Asia N20,500</option>
+             
+             <option data-plan="DStv Confam + ExtraView N7,115" data-amount="7115" data-service="dstv" data-variation_code="confam-extra">DStv Confam + ExtraView N7,115</option>
+             
+              <option data-plan="DStv Yanga + ExtraView N5,065" data-amount="5065" data-service="dstv" data-variation_code="yanga-extra">DStv Yanga + ExtraView N5,065</option>
+              
+               <option data-plan="DStv Padi + ExtraView N4,450" data-amount="4350" data-service="dstv" data-variation_code="padi-extra">DStv Padi + ExtraView N4,350</option>
+                
+                
+             <option data-plan="DStv Compact + Asia N14,100" data-amount="14100" data-service="dstv" data-variation_code="com-asia">DStv Compact + Asia N14,100</option>
+                
+                
+             <option data-plan="DStv Compact + Extra View N10,400" data-amount="10400" data-service="dstv" data-variation_code="dstv30">DStv Compact + Extra View N10,400</option>
+             
+             
+            <option data-plan="DStv Compact + French Touch N10,200" data-amount="10200" data-service="dstv" data-variation_code="com-frenchtouch">DStv Compact + French Touch N10,200</option>
+                
+            
+            <option data-plan="DStv Premium - Extra View N20,900" data-amount="20900" data-service="dstv" data-variation_code="dstv33">DStv Premium - Extra View N20,900</option>     
+                 
+                 
+                 
+              <option data-plan="DStv Compact Plus - Asia N18,600" data-amount="18600" data-service="dstv" data-variation_code="dstv40">DStv Compact Plus - Asia N18,600</option>   
+                 
+            
+            <option data-plan="DStv Compact + French Touch + ExtraView N12,700" data-amount="12700" data-service="dstv" data-variation_code="com-frenchtouch-extra">DStv Compact + French Touch + ExtraView N12,700</option>     
+                 
+                 
+                 
+              <option data-plan="DStv Compact + Asia + ExtraView N16,600" data-amount="16600" data-service="dstv" data-variation_code="com-asia-extra">DStv Compact + Asia + ExtraView N16,600</option>    
+             
+               <option data-plan="DStv Compact Plus + French Plus N20,500" data-amount="20500" data-service="dstv" data-variation_code="dstv43">DStv Compact Plus + French Plus N20,500</option>    
+                 
+               <option data-plan="DStv Compact Plus + French Touch N14,700" data-amount="14700" data-service="dstv" data-variation_code="complus-frenchtouch">DStv Compact Plus + French Touch N14,700</option> 
+                
+              
+              <option data-plan="DStv Compact Plus - Extra View N14,900" data-amount="14900" data-service="dstv" data-variation_code="dstv45">DStv Compact Plus - Extra View N14,900</option>  
+                
+                
+             <option data-plan="DStv Compact Plus + FrenchPlus + Extra View N23,000" data-amount="23000" data-service="dstv" data-variation_code="complus-french-extraview">DStv Compact Plus + FrenchPlus + Extra View N23,000</option>  
+                
+             <option data-plan="DStv Compact + French Plus N16,000" data-amount="16000" data-service="dstv" data-variation_code="dstv47">DStv Compact + French Plus N16,000</option>
+             
+             
+             <option data-plan="DStv Compact Plus + Asia ExtraView N21,100" data-amount="21100" data-service="dstv" data-variation_code="dstv48">DStv Compact Plus + Asia ExtraView N21,100</option>
+             
+             
+            <option data-plan="DStv Premium - Asia - Extra View N23,000" data-amount="23000" data-service="dstv" data-variation_code="dstv61">DStv Premium - Asia - Extra View N23,000</option>
+            
+            
+             <option data-plan="DStv Premium - French - Extra View N28,050" data-amount="28050" data-service="dstv" data-variation_code="dstv62">DStv Premium - French - Extra View N28,050</option> 
+             
+              <option data-plan="DStv HDPVR Access Service N2,500" data-amount="2500" data-service="dstv" data-variation_code="hdpvr-access-service">DStv HDPVR Access Service N2,500</option>
+             
+             <option data-plan="DStv French Plus Add-on N8,100" data-amount="8100" data-service="dstv" data-variation_code="frenchplus-addon">DStv French Plus Add-on N8,100</option>
+             
+                 
+             <option data-plan="DStv Asian Add-on N6,200" data-amount="6200" data-service="dstv" data-variation_code="asia-addon">DStv Asian Add-on N6,200</option>    
+                
+                 
+                 
+               
+                   
+                   
+              <option data-plan="DStv French Touch Add-on N2,300" data-amount="2300" data-service="dstv" data-variation_code="frenchtouch-addon">DStv French Touch Add-on N2,300</option>     
+                   
+                   
+                   
+               <option data-plan="ExtraView Access N2,500" data-amount="2500" data-service="dstv" data-variation_code="extraview-access">ExtraView Access N2,500</option>    
+                   
+                    
+               <option data-plan="DStv French 11 N3,260" data-amount="3260" data-service="dstv" data-variation_code="french11">DStv French 11 N3,260</option> 
+                
+                
+                </select>
+	
+	
+      </div>
+
+
+      
+      
+      <div class="form-group">
+          <label for="inputText3" class="col-form-label">Smartcard Number</label>
+    <input id="smartcard" type="text" class="form-control" name="smartno" onKeyUp="javascript:document.getElementById('iuc').value = document.getElementById('smartcard').value;" onSelect="javascript:document.getElementById('iuc').value = document.getElementById('smartcard').value;">
+                                            </div>
+                                            
+              <div class="form-group">
+          <label for="inputText3" class="col-form-label">Phone Number</label>
+    <input id="phone" type="phone" class="form-control" name="phone" onKeyUp="javascript:document.getElementById('tele').value = document.getElementById('phone').value;" onSelect="javascript:document.getElementById('tele').value = document.getElementById('phone').value;">
+                                            </div>                
+                                              
+                                            
+                </div>
+                <!-- End DSTV hidden -->  
+                
+          <!-- Start STARTTIMES hidden -->       
+                              <div class="float-center" id="ifStar" style="display:none;">                 
+                                       <div class="form-group" >
+                                                 
+		 
+        <label>Bouquet:</label>
+		
+		<select class="form-control" id="IsStar" required="required" ><option value = "" selected="selected" required="required">Select Startimes Banquet</option>
+                <option data-plan="Nova - 900 Naira" data-amount="900" data-service="startimes" data-variation_code="nova"> Startimes Nova - 900 Naira</option>
+                
+          <option data-plan="Basic - 1,700 Naira" data-amount="1700" data-service="startimes" data-variation_code="basic">Startimes Basic - 1,700 Naira</option>
+          
+          
+          <option data-plan="Smart - 2,200 Naira" data-amount="2200" data-service="startimes" data-variation_code="smart"> Startimes Smart - 2,200 Naira</option>
+          
+          
+          <option data-plan="Classic - 2,500 Naira" data-amount="2500" data-service="startimes" data-variation_code="classic">Startimes Classic - 2,500 Naira</option>
+          
+          
+          <option data-plan="Super - 4,200 Naira" data-amount="4200" data-service="startimes" data-variation_code="super"> Super - 4,200 Naira - 1 Month</option>
+          
+          
+          <option data-plan="Nova - 300 Naira - 1 Week" data-amount="300" data-service="startimes" data-variation_code="nova-weekly">Nova - 300 Naira - 1 Week</option>
+          
+          
+          <option data-plan="Basic - 600 Naira - 1 Week" data-amount="600" data-service="startimes" data-variation_code="basic-weekly">Basic - 600 Naira - 1 Week</option>
+          
+          
+          <option data-plan="Smart - 700 Naira - 1 Week" data-amount="700" data-service="startimes" data-variation_code="smart-weekly">Smart - 700 Naira - 1 Week</option>
+          
+          
+            <option data-plan="Classic - 1200 Naira - 1 Week - Promo" data-amount="1200" data-service="startimes" data-variation_code="classic-weekly">Classic - 1,200 Naira - 1 Week - Promo</option>
+            
+            
+             <option data-plan="Super - 1,500 Naira - 1 Week" data-amount="1500" data-service="startimes" data-variation_code="super-weekly">Super - 1,500 Naira - 1 Week</option>
+             
+             
+             <option data-plan="Nova - 90 Naira - 1 Day" data-amount="90" data-service="startimes" data-variation_code="nova-daily">Nova - 90 Naira - 1 Day</option>
+             
+              <option data-plan="Basic - 160 Naira - 1 Day" data-amount="160" data-service="startimes" data-variation_code="basic-daily">Basic - 160 Naira - 1 Day</option>
+              
+              <option data-plan="Smart - 200 Naira - 1 Day" data-amount="200" data-service="startimes" data-variation_code="smart-daily">Smart - 200 Naira - 1 Day</option>
+              
+              
+              <option data-plan="Classic - 320 Naira - 1 Day - Promo" data-amount="320" data-service="startimes" data-variation_code="classic-daily">Smart - 320 Naira - 1 Day</option>
+              
+              
+              <option data-plan="Super - 400 Naira - 1 Day" data-amount="400" data-service="startimes" data-variation_code="super-daily">Super - 360 Naira - 1 Day</option>
+                
+                </select>
+
+
+
+                create table transactions(
+    id int AUTO_INCREMENT,
+    track_id varchar(400) not null UNIQUE,
+    user_id varchar(400) not null,
+    user_email varchar(400) not null,
+    customer_code varchar(400) not null,
+    transaction_type varchar(400) not null,
+    payment_channel varchar(400) not null,
+    amount varchar(400) not null,
+    currency varchar(400) not null,
+    charge varchar(400) not null,
+    transaction_object varchar(400) not null,
+    date_made datetime default CURRENT_TIMESTAMP not null,
+    trnx_date varchar(400) not null,
+    PRIMARY key(id)
+)
+
+create table webhooks (
+    id int AUTO_INCREMENT,
+    track_id varchar(400) not null unique,
+    webhook_data longtext not null,
+    transaction_reference varchar(400) not null,
+    transaction_event varchar(400) not null,
+    transaction_status varchar(400) not null,
+    status_obj longtext not null,
+    sender varchar(400) not null,
+    date_sent datetime DEFAULT CURRENT_TIMESTAMP,
+    sent_date varchar(400) not null,
+    PRIMARY key(id)
+)
+
+create table referrals(
+    id int AUTO_INCREMENT not null,
+    track_id varchar(400)  not null UNIQUE,
+    referrer_id varchar(400) not null,
+    referrer_code varchar(400) not null,
+    referred_id varchar(400) not null UNIQUE,
+    referred_date varchar(400) not null,
+    date_referred datetime DEFAULT CURRENT_TIMESTAMP,
+    first_payment varchar(400) not null,
+    status varchar(400) not null,
+    PRIMARY key(id)
+)
