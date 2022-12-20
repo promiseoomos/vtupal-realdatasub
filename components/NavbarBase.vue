@@ -6,7 +6,7 @@
                 <p v-if="showsidebar" class="text-3xl text-black w-8 -mt-3"><img src="~/assets/cross-small.png"/></p>
             </button>
             
-            <NuxtLink :to="{ name : 'dashboard' }" @click="showdropdown = false" class="text-md lg:text-3xl lg:ml-3 mt-2 text-white font-bold"><img class="w-[50px] lg:w-[70px]" src="../public/img/site_logo.png" /></NuxtLink>
+            <NuxtLink :to="{ name : 'dashboard' }" @click="showdropdown = false" class="text-md lg:text-3xl lg:ml-3 mt-2 text-white font-bold"><img class="w-[50px] h-[50px] lg:w-[70px]" src="../public/img/site_logo.png" /></NuxtLink>
             <p class="text-md lg:text-3xl mt-2 text-white font-bold"></p>
         </div>
 

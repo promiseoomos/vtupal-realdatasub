@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public : {
             apiLocalBaseUrl : "http://localhost/vtupal/apis",
-            apiProductionBaseUrl : "https://akfemtopup.com.ng/vtupal/apis",
+            apiProductionBaseUrl : "https://usequicktest.com/vtupal/apis",
         }
     },
     nitro : {

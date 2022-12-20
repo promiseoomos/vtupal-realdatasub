@@ -16,10 +16,10 @@ include_once "functions.class.php";
 
 class Emailer{
 
-    private $support = Array("support@akfemtopup.com.ng");
-    private $mailpassword = "r!1lWR}g#?Qa";
-    private $mailhost = "mail.akfemtopup.com.ng";
-    private $origin = "app.akfemtopup.com.ng";
+    private $support = Array("admin@realdatasub.usequicktest.com");
+    private $mailpassword = "AdminReal@2023";
+    private $mailhost = "mail.hostinger.com";
+    private $origin = "realdatasub.usequicktest.com";
 
     public function pickRandomemail($pickfrom){
 
